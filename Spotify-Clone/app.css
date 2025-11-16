@@ -1,0 +1,840 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000000;
+  box-sizing: border-box;
+}
+
+/* navbar */
+
+.nav-bar {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+  position: fixed;
+}
+
+.nav-bar .logo {
+  background-image: url("Spotify_Primary_Logo_RGB_White.png");
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+}
+
+.nav-bar .home {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #282828;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home i {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.nav-bar .search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40%;
+  /* background-color: red; */
+}
+
+.search-bar .search-icon {
+  height: 40px;
+  background-color: #282828;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.search-bar .search-icon > i {
+  color: white;
+  font-size: 1.3rem;
+  margin-left: 10px;
+}
+
+.search-bar input {
+  background-color: #282828;
+  border: none;
+  height: 40px;
+  width: 95%;
+  color: white;
+}
+
+.search-bar input::placeholder {
+  text-indent: 40px;
+  font-size: 1.2rem;
+}
+
+.search-bar .icon {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: #282828;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.search-bar .icon > i {
+  color: white;
+  font-size: 1.3rem;
+  margin-right: 20px;
+}
+
+.links a {
+  color: white;
+  text-decoration-line: none;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 5px;
+  color: #eeeeee;
+}
+
+.line {
+  background-image: url('Images/line-xl-svgrepo-com.svg');
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  filter: invert(1);
+}
+
+.download {
+  display: flex;
+  align-items: center;
+}
+
+.download i {
+  color: #eeeeee;
+  font-size: 1.4rem;
+}
+
+.download a {
+  color: #eeeeee;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  text-decoration-line: none;
+  margin-left: 10px;
+}
+
+.buttons .btn-1 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #eeeeee;
+  text-decoration-line: none;
+}
+
+.buttons .btn-2 {
+  font-size: 1.05rem;
+  background-color: white;
+  font-weight: 700;
+  color: black;
+  text-decoration-line: none;
+  display: inline-block;
+  width: 100px;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+/* main */
+main {
+  display: flex;
+}
+
+main .aside {
+  width: 25vw;
+  min-height: 92vh;
+  background-color: #121212;
+  border-radius: 10px;
+  /* position: fixed; */
+  margin-top: 65px;
+  position: fixed;
+}
+
+.aside .your-library {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  position: relative;
+  gap: 150px;
+  height: 100px;
+  background-color: #121212;
+  box-shadow: 0px 2px 5px 2px black;
+  border-top-right-radius: 10px;
+}
+
+.your-library > h3 {
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+.aside .create-playlist {
+  height: 150px;
+  background-color: #1f1f1f;
+  margin: 0px 8px;
+  border-radius: 10px;
+  line-height: 25px;
+}
+
+.create-playlist > h3 {
+  color: white;
+  padding: 10px 30px 0px 15px;
+  font-weight: 700;
+}
+
+.create-playlist > h3::first-letter {
+  text-transform: capitalize;
+}
+
+.create-playlist > p {
+  color: white;
+  padding: 5px 30px 0px 15px;
+  font-size: 1.1rem;
+}
+
+.create-playlist > p::first-letter {
+  text-transform: capitalize;
+}
+
+.create-playlist > button {
+  background-color: white;
+  width: 140px;
+  margin: 25px 30px 0px 15px;
+  padding: 6px 6px;
+  border: none;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.create-playlist > button::first-letter {
+  text-transform: capitalize;
+}
+
+.aside .podcast {
+  height: 180px;
+  background-color: #1f1f1f;
+  margin: 20px 10px;
+  border-radius: 10px;
+  line-height: 25px;
+}
+
+.podcast > h3 {
+  color: white;
+  font-weight: 700;
+  padding: 10px 30px 0px 15px;
+}
+
+.podcast > h3::first-letter {
+  text-transform: capitalize;
+}
+
+.podcast > p {
+  color: white;
+  padding: 5px 30px 0px 15px;
+  font-size: 1.1rem;
+}
+
+.podcast > p::first-letter {
+  text-transform: capitalize;
+}
+
+.podcast button {
+  background-color: white;
+  width: 160px;
+  margin: 25px 30px 0px 15px;
+  padding: 6px 6px;
+  border: none;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.podcast > button::first-letter {
+  text-transform: capitalize;
+}
+
+.aside .tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 13px;
+  padding: 20px;
+  margin: 20px 3.5px;
+  font-size: 0.9rem;
+}
+
+.aside .tags > a {
+  text-transform: capitalize;
+  text-decoration-line: none;
+}
+
+.aside .color {
+  color: #b3b3b3;
+}
+
+.cook {
+  margin-top: -28px;
+}
+
+.cookies {
+  color: white;
+  text-decoration-line: none;
+  text-transform: capitalize;
+  margin-left: 24px;
+}
+
+.cookies:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 255, 255);
+}
+
+.country {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: black;
+  border: 0.2px solid white;
+  padding: 6px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  font-weight: 700;
+  margin-left: 30px;
+  margin-top: 35px;
+}
+
+.country .language {
+  margin-left: 10px;
+  text-transform: capitalize;
+}
+
+/* content */
+.content {
+  margin-left: 345px;
+  background-color: #121212;
+  width: 75vw;
+  min-height: 92vh;
+  margin-top: 65px;
+  border-radius: 15px;
+  /* position: fixed; */
+}
+
+.trending-songs {
+  position: sticky;
+}
+
+.trending-songs h2 {
+  margin: 40px 27px 0px 40px;
+}
+
+.trending-songs h2 a {
+  color: white;
+  text-decoration-line: none;
+  font-weight: 700;
+}
+
+.trending-songs h2::first-letter {
+  text-transform: capitalize;
+}
+
+.song-names {
+  padding: 30px;
+  display: flex;
+  margin-top: 5px;
+}
+
+.song-names .song1 {
+  padding: 0px 5px 0px 8px;
+}
+
+.song-names .song1 img {
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.song-names .song1:hover {
+  background-color: #282828;
+  border-radius: 10px;
+}
+
+.song-names .first-para {
+  margin-top: 5px;
+}
+
+.song-names .first-para a {
+  text-decoration-line: none;
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.song-names .second-para {
+  margin-top: 5px;
+}
+
+.song-names .second-para a {
+  text-decoration-line: none;
+  color: #b3b3b3;
+}
+
+.anchor a:hover {
+  text-decoration-line: underline;
+}
+
+.extra {
+  margin-left: 15px;
+}
+
+/* popular artists */
+
+.popular-artist .artist {
+  margin-left: 50px;
+  position: sticky;
+  margin-top: -20px;
+}
+
+.artist a {
+  color: white;
+  text-decoration-line: none;
+  font-weight: 700;
+}
+
+.artist h2::first-letter {
+  text-transform: capitalize;
+}
+
+.singers {
+  padding: 30px;
+  display: flex;
+}
+
+.singers .name {
+  padding: 0px 5px 0px 8px;
+}
+
+.name:hover {
+  background-color: #282828;
+  border-radius: 10px;
+}
+.name img {
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.name .first-para a {
+  color: white;
+  text-decoration-line: none;
+  font-size: 1.1rem;
+  margin-left: 5px;
+}
+
+.first-para a:hover {
+  text-decoration-line: underline;
+}
+
+.name .second-para {
+  color: #b3b3b3;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+/* albums */
+.albums .popular {
+  margin-left: 50px;
+  position: sticky;
+  /* margin-top: -10px; */
+}
+
+.popular a {
+  color: white;
+  text-decoration-line: none;
+  font-weight: 700;
+}
+
+.collection {
+  display: flex;
+  padding: 30px;
+}
+
+.collection .collect {
+  padding: 0px 5px 0px 8px;
+}
+
+.collect img {
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.collect:hover {
+  background-color: #282828;
+  border-radius: 10px;
+}
+
+.collect .first-para {
+  margin-top: 3px;
+}
+
+.collect .first-para a {
+  text-decoration-line: none;
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.collect .second-para {
+  margin-top: 3px;
+}
+
+.collect .second-para a {
+  color: #b3b3b3;
+  text-decoration-line: none;
+}
+
+.collect a:hover {
+  text-decoration-line: underline;
+}
+
+/* radio */
+.popular-radio .title {
+  margin-left: 50px;
+  position: sticky;
+}
+
+.title h2 a {
+  color: white;
+  text-decoration-line: none;
+  font-weight: 700;
+}
+
+.radio {
+  display: flex;
+  padding: 30px;
+}
+
+.radio .channel {
+  padding: 0px 5px 0px 8px;
+}
+
+.channel .first {
+  background-color: #fed97e;
+  width: 175px;
+  height: 175px;
+  border-radius: 10px;
+}
+
+.first nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 5px;
+}
+
+.first nav .logo {
+  background-image: url("Spotify_Primary_Logo_RGB_White.png");
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  filter: invert();
+  font-size: 0.9rem;
+}
+
+.first nav p {
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.first .images {
+  padding: 20px 2px 0px 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first .images .img1 img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.first .images .img2 img {
+  width: 70px;
+  height: 70px;
+  border: 4px solid #fed97e;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.first .images .img3 img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.first p {
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.channel .first-para {
+  color: #b3b3b3;
+  margin-top: 5px;
+}
+
+.channel:hover {
+  background-color: #282828;
+  border-radius: 10px;
+}
+
+#changecolor {
+  background-color: #f89bd2;
+}
+#change1color {
+  background-color: #91eedb;
+}
+#change2color {
+  background-color: #91eedb;
+}
+#change3color {
+  background-color: #afb1fc;
+}
+#change4color {
+  background-color: #fea178;
+}
+#change5color {
+  background-color: #cff56a;
+}
+
+/* featured charts */
+.feature-charts .chart {
+  position: sticky;
+  margin-left: 50px;
+}
+
+.chart a {
+  color: white;
+  text-decoration-line: none;
+  font-weight: 700;
+}
+
+.feature-charts .chart-collection {
+  padding: 0px 5px 0px 8px;
+  /* background-color: red; */
+  display: flex;
+  padding: 30px;
+}
+
+.chart-collection .fchart {
+  padding: 0px 5px 0px 8px;
+}
+
+.charts {
+  padding: 0px 5px 0px 8px;
+}
+
+.charts:hover {
+  background-color: #282828;
+  border-radius: 10px;
+}
+
+.chart-collection .fchart {
+  width: 175px;
+  height: 175px;
+  box-sizing: border-box;
+  background-color: #773795;
+  border-radius: 10px;
+}
+
+.chart-collection .fchart .chart-logo {
+  background-image: url("Spotify_Primary_Logo_RGB_White.png");
+  height: 15px;
+  width: 15px;
+  background-size: cover;
+  position: relative;
+  top: 5px;
+}
+
+.chart-collection .fchart .chart-text {
+  padding: 10px 0px 0px 5px;
+  line-height: 1.8rem;
+}
+
+.chart-text h2 {
+  color: white;
+}
+.chart-text .thirdhead {
+  color: #b3b3b3;
+}
+
+.chart-collection .fchart .chart-footer {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.chart-collection .fchart .chart-icon {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  margin-left: -8px;
+  margin-top: 13px;
+}
+
+.chart-icon .fa-arrow-up {
+  margin-top: 5px;
+  transform: rotate(45deg);
+  color: #773795;
+}
+
+.chart-collection .fchart .chart-footer p {
+  color: white;
+  margin-left: 10px;
+  margin-top: 13px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.charts p {
+  color: #b3b3b3;
+  margin-top: 5px;
+}
+
+.chart-collection .bgchange1 {
+  background-color: #1e3264;
+}
+
+.chart-icon .unique1 {
+  color: #1e3264;
+}
+
+.chart-collection .bgchange2 {
+  background: linear-gradient(to bottom, #1d7974 10%, #1f3566 90%);
+}
+
+.fchart .heading {
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.fchart hr {
+  width: 78px;
+  margin-top: 14px;
+  margin-left: 40px;
+  border-color: #b3b3b3;
+}
+
+.chart-text p {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 0.6rem;
+}
+
+.chart-collection .bgchange3 {
+  background: linear-gradient(to bottom, #cec840, #cbc435);
+}
+
+.chart-collection .bgchange4 {
+  background: linear-gradient(to bottom, #18b973 50%, #594159 50%);
+}
+.chart-collection .bgchange5 {
+  background: linear-gradient(to bottom, #c9b739 50%, #2a4272 50%);
+}
+
+hr {
+  margin-top: 70px;
+  background-color: #b3b3b3;
+  border-color: none;
+  height: 0.5px;
+}
+/* footer */
+.footers {
+  display: flex;
+  gap: 20px;
+}
+
+ul {
+  padding: 30px;
+}
+li {
+  color: white;
+  list-style: none;
+  line-height: 30px;
+}
+
+li a {
+  text-decoration-line: none;
+  color: white;
+}
+
+ul .head a {
+  font-weight: 900;
+}
+
+.footer-logos {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.footer-logos i {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.instagram {
+  background-color: #282828;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+.twitter {
+  background-color: #282828;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+.facebook {
+  background-color: #282828;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+
+.hori-line{
+  margin-top: 20px;
+}
+
+.last-para p{
+  color:#b3b3b3;
+  padding: 30px;
+}

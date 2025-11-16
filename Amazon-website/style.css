@@ -1,0 +1,687 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --backgroundprimarycolor: #0F1111;
+    --primtextcolor: white;
+    --sectextcolor: #D6D6D6;
+    --tertextcolor: black;
+    --quartextcolor: #CCCCCC;
+    --defaultborder: 0.5px solid white;
+}
+
+.border:hover {
+    border: var(--defaultborder);
+}
+
+header .nav-bar {
+    height: 60px;
+    background-color: #131921;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-bar .nav-logo {
+    height: 50px;
+    width: 115px;
+}
+
+.nav-bar .nav-logo .logo {
+    background-image: url("Pictures/amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+
+header .nav-bar .nav-location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 50px;
+    color: var(--primtextcolor);
+}
+
+header .nav-bar .nav-location .location-icon {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+header .nav-location .first-para {
+    color: var(--quartextcolor);
+    font-size: 0.85rem;
+}
+
+.first-para::first-letter {
+    text-transform: capitalize;
+}
+
+header .nav-location .second-para {
+    color: var(--primtextcolor);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+
+header .nav-bar .nav-search {
+    flex: 1;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    max-width: 600px;
+    min-width: 200px;
+    height: 40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+header .nav-bar .nav-search .selection {
+    width: 50px;
+    text-align: center;
+    background-color: #f3f3f3;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+header .nav-bar .nav-search .search-bar {
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+}
+
+header .nav-bar .nav-search .search-icon {
+    background-color: orange;
+    color: var(--tertextcolor);
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .nav-bar .nav-country {
+    width: 65px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+
+header .nav-bar .nav-country .flag img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin-top: 6px;
+}
+
+header .nav-bar .nav-country .language {
+    text-transform: uppercase;
+    border: none;
+    margin-left: 5px;
+    background-color: #0F1111;
+    color: var(--primtextcolor);
+    font-weight: 700;
+}
+
+header .nav-bar .welcome {
+    width: 140px;
+    height: 55px;
+    color: var(--primtextcolor);
+
+}
+
+header .nav-bar .welcome .first-welcome {
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-left: 4px;
+
+}
+
+header .nav-bar .welcome .second-welcome {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 4px;
+    text-transform: capitalize;
+}
+
+header .nav-bar .welcome .second-welcome select {
+    border: none;
+    background-color: #0F1111;
+    color: #CCCCCC;
+}
+
+header .nav-bar .orders {
+    width: 75px;
+    height: 50px;
+    color: var(--primtextcolor);
+}
+
+header .nav-bar .orders .order-1 {
+    font-size: 0.85rem;
+    text-transform: capitalize;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+header .nav-bar .orders .order-2 {
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-left: 3px;
+}
+
+header .nav-bar .cart {
+    display: flex;
+    align-items: center;
+}
+
+header .nav-bar .cart span {
+    color: var(--primtextcolor);
+    font-size: 2rem;
+}
+
+header .nav-bar .cart span:nth-child(2) {
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+header .top-content {
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header .top-content .nav-left {
+    color: var(--primtextcolor);
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    width: 58px;
+    height: 35px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+header .top-content .nav-left span {
+    font-weight: 700;
+    padding: 0px 0px 0px 5px;
+}
+
+header .top-content .nav-fill {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: var(--primtextcolor);
+    text-transform: capitalize;
+}
+
+header .top-content .nav-fill p {
+    margin: 20px;
+}
+
+main .hero .bg-iamge {
+    background-image: url(Pictures/hero.jpg);
+    height: 400px;
+    background-size: cover;
+}
+
+main .hero .shopping-section {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #e3e6e6;
+    justify-content: center;
+}
+
+main .hero .boxes {
+    width: 310px;
+    height: 420px;
+    background-color: white;
+    margin: 5px;
+}
+
+main .hero .shopping-section .box1 {
+    padding: 10px;
+}
+
+main .hero .shopping-section .box1 .images {
+    width: 270px;
+    height: 380px;
+}
+
+main .hero .shopping-section .title {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+main .hero .box1 img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    margin: 15px 0px 0px 3px;
+}
+
+main .hero .shopping-section .box2 {
+    padding: 10px;
+
+}
+
+main .hero .shopping-section .box2 img {
+    width: 270px;
+    height: 350px;
+    object-fit: cover;
+    margin: 8px 0px 0px 10px;
+}
+
+main .hero .shopping-section a {
+    text-decoration-line: none;
+    margin-left: 10px;
+}
+
+main .hero .shopping-section .box3 {
+    padding: 10px;
+}
+
+main .hero .shopping-section .box3 .images {
+    width: 270px;
+    height: 380px;
+}
+
+main .hero .box3 img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    margin: 30px 0px 0px 3px;
+}
+
+main .hero .shopping-section .box4 {
+    padding: 10px;
+}
+
+main .hero .shopping-section .box4 img {
+    width: 270px;
+    height: 350px;
+    object-fit: contain;
+    margin: 8px 0px 0px 10px;
+}
+
+main .hero .shopping-section .box5 {
+    padding: 10px;
+}
+
+main .hero .shopping-section .box5 img {
+    width: 270px;
+    height: 350px;
+    object-fit: cover;
+    margin: 8px 0px 0px 10px;
+}
+
+main .hero .shopping-section .box6 {
+    padding: 10px;
+}
+
+main .hero .shopping-section .box6 .images {
+    width: 270px;
+    height: 380px;
+}
+
+main .hero .box6 img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    margin: 30px 0px 0px 3px;
+}
+
+main .hero .shopping-section .box7 {
+    padding: 10px;
+}
+
+main .hero .shopping-section .box7 .images {
+    width: 270px;
+    height: 380px;
+}
+
+main .hero .box7 img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    margin: 30px 0px 0px 3px;
+}
+
+main .hero .shopping-section .box8 {
+    padding: 10px;
+}
+
+main .hero .shopping-section .box8 img {
+    width: 270px;
+    height: 350px;
+    object-fit: cover;
+    margin: 8px 0px 0px 10px;
+}
+
+main .hero .shopping-section .box9 {
+    padding: 10px;
+}
+
+main .hero .shopping-section .box9 .images {
+    width: 270px;
+    height: 380px;
+}
+
+main .hero .box9 img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    margin: 30px 0px 0px 3px;
+}
+
+
+main .hero .shopping-section .box10 {
+    padding: 10px;
+}
+
+main .hero .shopping-section .box10 img {
+    width: 270px;
+    height: 350px;
+    object-fit: cover;
+    margin: 8px 0px 0px 10px;
+}
+
+main .hero .shopping-section .box11 {
+    padding: 10px;
+}
+
+main .hero .shopping-section .box11 img {
+    width: 270px;
+    height: 350px;
+    object-fit: contain;
+    margin: 8px 0px 0px 10px;
+}
+
+main .hero .shopping-section .box12 {
+    padding: 10px;
+}
+
+main .hero .shopping-section .box12 .images {
+    width: 270px;
+    height: 380px;
+}
+
+main .hero .box12 img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    margin: 30px 0px 0px 3px;
+}
+
+main section .sign-box {
+    height: 100px;
+    background-color: white;
+    text-align: center;
+}
+
+main section .sign-box h2 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+main section .sign-box button {
+    background-color: #ffce12;
+    padding: 0px 12px;
+    height: 30px;
+    width: 200px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+main section .sign-box button::first-letter {
+    text-transform: capitalize;
+}
+
+main section .sign-box p {
+    margin-top: 2px;
+    font-size: 13px;
+}
+
+main section .sign-box p::first-letter {
+    text-transform: capitalize;
+}
+
+main section .sign-box p>a {
+    color: #2162a1;
+    font-size: 13px;
+    display: inline-block;
+}
+
+main section .sign-box p>a::first-letter {
+    text-transform: capitalize;
+}
+
+main section .last-section {
+    height: 50px;
+    color: var(--primtextcolor);
+    background-color: #37475a;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+main section .last-section p::first-letter {
+    text-transform: capitalize;
+}
+
+footer {
+    background-color: #232f3e;
+
+}
+
+footer .footer-section {
+    height: 450px;
+    color: var(--primtextcolor);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .footer-section .first {
+    margin-top: 50px;
+
+
+}
+
+footer .footer-section .second {
+    margin-top: 50px;
+
+}
+
+footer .footer-section .third {
+    margin-top: 50px;
+
+}
+
+footer .footer-section .fourth {
+    margin-top: 50px;
+
+}
+
+footer .footer-section .fourth a {
+    width: 137px;
+}
+
+
+footer .footer-section .first,
+.second,
+.third,
+.fourth,
+h3 {
+    margin-left: 10px;
+}
+
+footer .footer-section a {
+    color: var(--primtextcolor);
+    list-style: none;
+    text-decoration-line: none;
+    display: flex;
+    margin: 15px;
+    font-size: 14px;
+
+}
+
+footer .footer-section2 {
+    height: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer .footer-section2 .footer-logo img {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+    margin-top: 11px;
+    margin-left: 100px;
+}
+
+footer .footer-section2 .footer-language {
+    display: flex;
+    align-items: center;
+    border: 0.5px solid white;
+    width: 130px;
+    height: 33px;
+    padding: 0px 7.8px;
+    margin: 0px 5px 0px 0px;
+    padding: 6px 18px 6px 10px;
+}
+
+footer .footer-section2 .footer-language span {
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+footer .footer-section2 .footer-payment {
+    display: flex;
+    align-items: center;
+    border: 0.5px solid white;
+    margin: 0px 5px 0px 0px;
+    padding: 6px 18px 6px 10px;
+}
+
+footer .footer-section2 .footer-payment span {
+    margin-left: 5px;
+    font-size: 13px;
+
+}
+
+footer .footer-section2 .footer-country img {
+    width: 18px;
+    height: 12px;
+    object-fit: cover;
+
+}
+
+footer .footer-section2 .footer-country {
+    display: flex;
+    align-items: center;
+    border: 0.5px solid white;
+    margin: 0px 5px 0px 0px;
+    padding: 6px 18px 6px 10px;
+}
+
+footer .footer-section2 .footer-country span {
+    margin-left: 5px;
+    font-size: 13px;
+
+}
+
+
+
+footer .footer-section2 .information {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+footer .end-section {
+    height: 520px;
+    background-color: #131a22;
+}
+
+footer .second-last {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .end-section a {
+    width: 120px;
+    display: inline-block;
+    color: white;
+    text-decoration-line: none;
+    margin: 30px 0px 0px 20px;
+}
+
+footer .caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .caption p {
+    text-align: center;
+    color: white;
+    margin: 50px 0px 0px 20px;
+}
+
+footer .copy p {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+footer a:hover {
+    text-decoration: underline;
+
+}
+
+
+.shopping-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.box {
+  width: 100%;
+}
+
+/* Tablet (≥ 600px) */
+@media (min-width: 600px) {
+  .shopping-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .box {
+    width: 45%;
+  }
+}
+
+/* Desktop (≥ 1024px) */
+@media (min-width: 1024px) {
+  .box {
+    width: 22%;
+  }
+}
