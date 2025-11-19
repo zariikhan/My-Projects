@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
 @layer components {
   .button {
     @apply bg-[#194043] text-white p-2 w-25 text-center rounded-full inline-block font-medium capitalize;
